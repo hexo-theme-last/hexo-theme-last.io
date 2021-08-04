@@ -14,9 +14,22 @@ function modifyClass(obj, className, op) { // op = 1 add; op == 0 remove
     }
 }
 
+/******* insert After **********/
+function insertAfter(newElement, targetElement) { // newElement是要追加的元素 targetElement 是指定元素的位置 
+    var parent = targetElement.parentNode; // 找到指定元素的父节点 
+    if (parent.lastChild == targetElement) { // 判断指定元素的是否是节点中的最后一个位置 如果是的话就直接使用appendChild方法 
+        parent.appendChild(newElement, targetElement);
+    } else {
+        parent.insertBefore(newElement, targetElement.nextSibling);
+    };
+};
+
 if (isHome == false) {
     menuOuter.style.backgroundColor = "#191919";
 }
+
+
+/********** toc fix **********/
 
 
 menuIcon.onclick = function() {
@@ -49,6 +62,17 @@ window.addEventListener("scroll", function() {
             modifyClass(menuOuter, "newMenuOuterColor", 1);
         } else {
             modifyClass(menuOuter, "newMenuOuterColor", 0);
+        }
+    }
+    /******** fix toc *******/
+    let s = document.body.scrollTop || document.documentElement.scrollTop;
+    if (typeof(toc) != 'undefined') {
+        if (s > H - 100) {
+            let sidebar = document.getElementById("toc-col");
+            let width = sidebar.offsetWidth;
+            toc.style = "position:fixed;top:50px;width:" + width + "px";
+        } else {
+            toc.style = "";
         }
     }
 

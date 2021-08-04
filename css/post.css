@@ -3,6 +3,16 @@
   src: url("/font-awesome/webfonts/fa-solid-900.eot");
   src: url("/font-awesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/font-awesome/webfonts/fa-solid-900.woff") format("woff"), url("/font-awesome/webfonts/fa-solid-900.ttf") format("truetype"), url("/font-awesome/webfonts/fa-solid-900.svg#micon") format("svg");
 }
+@font-face {
+  font-family: "fontawesome";
+  src: url("/font-awesome/webfonts/fa-solid-900.eot");
+  src: url("/font-awesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/font-awesome/webfonts/fa-solid-900.woff") format("woff"), url("/font-awesome/webfonts/fa-solid-900.ttf") format("truetype"), url("/font-awesome/webfonts/fa-solid-900.svg#micon") format("svg");
+}
+@font-face {
+  font-family: "fontawesome";
+  src: url("/font-awesome/webfonts/fa-solid-900.eot");
+  src: url("/font-awesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/font-awesome/webfonts/fa-solid-900.woff") format("woff"), url("/font-awesome/webfonts/fa-solid-900.ttf") format("truetype"), url("/font-awesome/webfonts/fa-solid-900.svg#micon") format("svg");
+}
 #post-content h1 {
   padding-bottom: 0.3em;
   font-size: 2.25em;
@@ -232,6 +242,7 @@ body {
 #share-col {
   order: 1;
   flex: 0 0 50px;
+  z-index: 2;
 }
 #shareButtons {
   padding-top: 100px;
@@ -273,11 +284,15 @@ body {
   .fdate {
     display: none;
   }
+  .ribbon {
+    display: none;
+  }
 }
 #titles {
   padding-left: 20px;
   border-left: solid 0.3125rem #000;
-  padding-bottom: 0.3125rem;
+  padding-bottom: 25px;
+  position: relative;
 }
 #titles h1 {
   padding-top: 0.9375rem;
@@ -285,11 +300,60 @@ body {
   margin-bottom: 0.8rem;
   font-weight: 900;
   font-size: 2em;
+  z-index: -1;
 }
 #first-line {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.ribbon {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: right;
+}
+.ribbon .ri {
+  font-size: rem(12px);
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #b31917;
+  position: absolute;
+  top: 19px;
+  right: -21px;
+}
+.ribbon .ri:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid #b31917;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #b31917;
+}
+.ribbon .ri:after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #b31917;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #b31917;
 }
 .date {
   min-width: 130px;
@@ -313,22 +377,30 @@ body {
   margin-left: 0.5rem;
 }
 .date-warning {
-  padding: 15px;
+  padding: 15px 15px 15px 38px;
   margin: 20px 0;
   background-color: #eef7fa;
   border-left: 3px solid;
   border-left-color: #428bca;
   border-radius: 3px;
+  position: relative;
 }
 .date-warning:before {
   content: "\f05a";
   color: #428bca;
   font-family: 'fontawesome';
-  font-size: larger;
-  margin-right: 10px;
   display: block;
   float: left;
   vertical-align: middle;
+  font-size: larger;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .date-warning strong {
   color: inherit !important;
@@ -342,12 +414,22 @@ body {
   margin-bottom: 40px;
 }
 #post img {
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 #post figure,
-#post table {
-  width: 100%;
-  overflow-x: hidden;
+#post table,
+width: 100% {
+  overflow-x: scroll;
+}
+#post table:not(figure table) {
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 #post .highlight {
   width: 100%;
@@ -360,6 +442,7 @@ body {
   margin-inline-end: 0px;
   font-weight: bold;
   font-size: 25px;
+  z-index: -1 !important;
 }
 #post-content  h2 {
   line-height: 1.225;
@@ -370,6 +453,7 @@ body {
   font-weight: bold;
   position: relative;
   font-size: 20px;
+  z-index: -1 !important;
 }
 #post-content h3 {
   display: block;

@@ -12,7 +12,10 @@ var widthOfCarousel = postList.clientWidth / carouselList.length;
 var container = document.getElementsByClassName("carousel-container")[0];
 var prevPic = container.getElementsByClassName("fa-chevron-left")[0];
 var nextPic = container.getElementsByClassName("fa-chevron-right")[0];
-
+var carouselContent = document.getElementsByClassName("carouselContent");
+for (var i = 0; i < carouselContent.length; i++) {
+    carouselContent[i].style.marginTop = (window.innerHeight - carouselContent[i].clientHeight) / 2 + "px";
+}
 // make the dot be in the center
 if (isCenter) {
     var Dots = document.getElementsByClassName("navDots")[0];
@@ -24,8 +27,11 @@ if (isCenter) {
 window.onresize = function() {
     postList.style.width = 100 * carouselList.length + "vw";
     widthOfCarousel = postList.clientWidth / carouselList.length;
-    centerDot = (window.innerWidth - Dots.offsetWidth) / 2;
-    Dots.style.left = centerDot + "px";
+    if (isCenter) {
+        centerDot = (window.innerWidth - Dots.offsetWidth) / 2;
+        Dots.style.left = centerDot + "px";
+    }
+
 }
 
 // add and class to make the current dot able to modify by css

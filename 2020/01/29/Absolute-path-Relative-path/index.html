@@ -1,26 +1,55 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Absolute path and Relative path [ Hexo ]</title><link rel="stylesheet" href="/css/reset.css"><link rel="stylesheet" href="/css/includes/header.css"><link rel="stylesheet" href="/css/includes/footer.css"><link rel="stylesheet" href="/css/last.css"><link rel="stylesheet" href="/css/recent-posts.css"><link rel="stylesheet" href="/font-awesome/css/all.min.css"><link rel="stylesheet" href="/css/includes/side-user.css"><link rel="stylesheet" href="/css/includes/toc.css"><link rel="stylesheet" href="/css/links.css"><link rel="stylesheet" href="/css/post.css"><link rel="stylesheet" href="/css/third-party/share.min.css"><link rel="stylesheet" href="/css/article/simple.css"><link rel="stylesheet" href="/css/includes/code/highlights/sakura.css"><link rel="stylesheet" href="/css/last.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.min.js"></script><script>var isHome = false;
-var isCenter = false;</script><meta name="generator" content="Hexo 5.3.0"></head><body><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"><div id="menu-outer"><div class="site-name"><a>John Doe</a></div><div class="search"><input id="local-search-input" tpye="text" placeholder="Type to search"><span class="search-icon"><i class="fa fa-search"></i></span></div><div class="menu"><ul class="menu-icon"><li></li><li></li><li></li></ul><ul id="nav"><img class="menu-avatar" src="https://s1.ax1x.com/2020/04/17/JEjcB8.png"><div class="menu-items"><li class="item-name"><a class="name-a" href="/"><i class="fas fa-home"></i> Home</a></li><li class="item-name"><a class="name-a" href="/categories"><i class="fas fa-list"></i> Category</a><ul class="submenu-items"><li class="subitem-name"><a href="/categories/life"><i class="fas fa-lightbulb"></i> Creativiy</a></li><li class="subitem-name"><a href="/categories/art"><i class="fas fa-palette"></i> Art</a></li><li class="subitem-name"><a href="/"><i class="fas fa-chart-bar"></i> Math</a></li><li class="subitem-name"><a href="/"><i class="fas fa-atom"></i> Physisc</a></li><li class="subitem-name"><a href="/"><i class="fas fa-yen-sign"></i> Economy</a></li><li class="subitem-name"><a href="/"><i class="fas fa-credit-card"></i> Mathmatics</a></li></ul></li><li class="item-name"><a class="name-a" href="/archives"><i class="fas fa-archive"></i> Archives</a></li><li class="item-name"><a class="name-a" href="/tags"><i class="fas fa-tag"></i> Tag</a></li><li class="item-name"><a class="name-a" href="/"><i class="fas fa-comment"></i> Comment</a></li><li class="item-name"><a class="name-a" href="/links"><i class="fas fa-link"></i> Friends</a></li></div></ul></div></div><div id="content-outer"><div id="content-inner"><div id="post-outer"><div id="share-col"><div id="shareButtons"><div id="shareButtonsInner"><span class="social-share" data-sites="facebook,twitter,qq,wechat,qzone,weibo"></span></div></div></div><div id="mid-col"><div id="post"><div id="titles"><div id="first-line"><h1>Absolute path and Relative path</h1><div class="date"><span class="post-title-icons"><i class="fa fa-calendar"></i></span><time class="words" datetime="2020-01-29T09:41:46.000Z">2020-01-29</time></div></div><div id="post-information"><a class="category-post"><span class="post-title-icons"><i class="fa fa-book"></i></span><span class="words" href="/categories/Linux/">Linux</span></a><a class="post-tag"><span class="post-title-icons"><i class="fa fa-tag"></i></span><span class="words" href="/tags/Knowledge-points/">Knowledge points  </span></a><span class="post-title-icons"> <i class="fa fa-clock"></i></span><span class="words">1 min</span><span class="post-title-icons"><i class="fa fa-file-alt"></i></span><span class="words">159 words</span></div></div><div id="post-content"><div class="date-warning"><span>This article was written </span><strong>538</strong><span> days ago. The content of the article may be out of date.</span></div><p>There are two ways to represents a directory, Absolute path and Relative path.</p>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Absolute path and Relative path [ Hexo ]</title><link rel="stylesheet" href="/css/reset.css"><link rel="stylesheet" href="/css/includes/header.css"><link rel="stylesheet" href="/css/includes/footer.css"><link rel="stylesheet" href="/css/includes/pagination.css"><link rel="stylesheet" href="/css/last.css"><link rel="stylesheet" href="/css/recent-posts.css"><link rel="stylesheet" href="/font-awesome/css/all.min.css"><link rel="stylesheet" href="/css/includes/side-user.css"><link rel="stylesheet" href="/css/includes/toc.css"><link rel="stylesheet" href="/css/links.css"><link rel="stylesheet" href="/css/post.css"><link rel="stylesheet" href="/css/third-party/share.min.css"><link rel="stylesheet" href="/css/article/simple.css"><link rel="stylesheet" href="/css/includes/code/highlights/sakura.css"><link rel="stylesheet" href="/css/last.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.min.js"></script><script>var isHome = false;
+var isCenter = false;</script><script>var isCenter = true;</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.3.0"></head><body><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"><div id="menu-outer"><div class="site-name"><a>John Doe</a></div><div class="search"><input id="local-search-input" tpye="text" placeholder="Type to search"><span class="search-icon"><i class="fa fa-search"></i></span></div><div class="menu"><ul class="menu-icon"><li></li><li></li><li></li></ul><ul id="nav"><img class="menu-avatar" src="https://s1.ax1x.com/2020/04/17/JEjcB8.png"><div class="menu-items"><li class="item-name"><a class="name-a" href="/"><i class="fas fa-home"></i> Home</a></li><li class="item-name"><a class="name-a" href="/categories"><i class="fas fa-list"></i> Category</a><ul class="submenu-items"><li class="subitem-name"><a href="/categories/life"><i class="fas fa-lightbulb"></i> Creativiy</a></li><li class="subitem-name"><a href="/categories/art"><i class="fas fa-palette"></i> Art</a></li><li class="subitem-name"><a href="/"><i class="fas fa-chart-bar"></i> Math</a></li><li class="subitem-name"><a href="/"><i class="fas fa-atom"></i> Physisc</a></li><li class="subitem-name"><a href="/"><i class="fas fa-yen-sign"></i> Economy</a></li><li class="subitem-name"><a href="/"><i class="fas fa-credit-card"></i> Mathmatics</a></li></ul></li><li class="item-name"><a class="name-a" href="/archives"><i class="fas fa-archive"></i> Archives</a></li><li class="item-name"><a class="name-a" href="/tags"><i class="fas fa-tag"></i> Tag</a></li><li class="item-name"><a class="name-a" href="/theme-last-guide/site"><i class="fas fa-puzzle-piece"></i> Last</a></li><li class="item-name"><a class="name-a" href="/links"><i class="fas fa-link"></i> Friends</a></li></div></ul></div></div><div id="content-outer"><div id="content-inner"><div id="post-outer"><div id="share-col"><div id="shareButtons"><div id="shareButtonsInner"><span class="social-share" data-sites="facebook,twitter,qq,wechat,qzone,weibo"></span></div></div></div><div id="mid-col"><div id="post"><div id="titles"><span class="ribbon"><span class="ri">Origin</span></span><div id="first-line"><h1>Absolute path and Relative path</h1><div class="date"><span class="post-title-icons"><i class="fa fa-calendar"></i></span><time class="words" datetime="2020-01-29T09:41:46.000Z">2020-01-29</time></div></div><div id="post-information"><a class="category-post"><span class="post-title-icons"><i class="fa fa-book"></i></span><span class="words" href="/categories/Linux/">Linux</span></a><a class="post-tag"><span class="post-title-icons"><i class="fa fa-tag"></i></span><span class="words" href="/tags/Knowledge-points/">Knowledge points  </span></a><span class="post-title-icons"> <i class="fa fa-clock"></i></span><span class="words">1 min</span><span class="post-title-icons"><i class="fa fa-file-alt"></i></span><span class="words">159 words</span></div></div><div id="post-content"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    CommonHTML: {
+        linebreaks: { automatic: true, width: "90% container" }
+    },
+    "HTML-CSS": { 
+        linebreaks: { automatic: true, width: "90% container" }
+    },
+    "SVG": { 
+        linebreaks: { automatic: true, width: "90% container" }
+    }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>There are two ways to represents a directory, Absolute path and Relative path.</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">path</th>
-<th align="center">start</th>
-<th align="center">start sign</th>
+<th style="text-align:center">path</th>
+<th style="text-align:center">start</th>
+<th style="text-align:center">start sign</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">Absolute</td>
-<td align="center">root directory</td>
-<td align="center">/</td>
+<tbody>
+<tr>
+<td style="text-align:center">Absolute</td>
+<td style="text-align:center">root directory</td>
+<td style="text-align:center">/</td>
 </tr>
 <tr>
-<td align="center">Relative</td>
-<td align="center">current directory</td>
-<td align="center">~</td>
+<td style="text-align:center">Relative</td>
+<td style="text-align:center">current directory</td>
+<td style="text-align:center">~</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <a id="more"></a>
-
 <p>For example, when I open the terminal at first time, the default directory is /home/user</p>
 <p>I want to see the folder “name1” under /user/names</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;home&#x2F;user&#x2F;names&#x2F;name1  &#x2F;&#x2F; Absolute</span><br></pre></td></tr></table></figure>
@@ -38,7 +67,7 @@ var isCenter = false;</script><meta name="generator" content="Hexo 5.3.0"></head
 <p>Or you can use</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd $OLDPWD</span><br></pre></td></tr></table></figure>
 <p>It’s the same to cd -.</p>
-</div></div><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = 'true' == true ? true : false;
+</div></div><nav id="pagination"><div class="prev-post pull-left"><a id="prev" href="/2020/01/30/CodeForces-1295A-Display-The-Number/"><div class="img_fit imgL"><img src="https://s1.ax1x.com/2020/04/26/Jcug1A.png"></div><div class="info il"><div class="label" id="label-l">PREVIOUS POST</div><div>CodeForces 1295 A Display The Number</div></div></a></div><div class="next-post pull-right"><a id="next" href="/2020/01/19/CodeForces-1293B-JOE-is-on-TV!/"><div class="img_fit imgR"><img src="https://s1.ax1x.com/2020/04/26/JcufnP.png" alt="this"></div><div class="info ir"><div class="label" id="label-r">NEXT POST</div><div>CodeForces-1293B JOE is on TV!</div></div></a></div></nav><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = 'true' == true ? true : false;
 var verify = 'true' == true ? true : false;
 var GUEST_INFO = ['nick','mail','link'];
 var guest_info = 'nick,mail,link'.split(',').filter(function(item){
@@ -59,25 +88,29 @@ window.valine = new Valine({
 })
 
     </script></div><div id="toc-col"><div class="side-user"><ul class="top-bar"><li class="me">ABOUT</li><li class="mid">|</li><li class="link">DONATE</li></ul><div class="clearfix" id="author-info"><img class="qrButton" src="/img/qrcode_icon.png"><div class="au-info"><img class="avatar" src="https://s1.ax1x.com/2020/04/17/JEjcB8.png"><div id="side-author">John Doe</div><div id="author-description">I expect to make friends with you! I'm an ACＭmer but not very good. I like learning.</div></div><div id="payment-code"><div class="qr-description">Like my post?</div><img class="pay-code" src="/img/wechat.jpg"><div class="payButtons"><div class="wechat">Wechat</div><div class="alipay">Alipay</div></div></div></div></div></div></div><script>var desc = "&lt;p&gt;There are two ways to represents a directory, Absolute path and Relative path.&lt;/p&gt;
+&lt;div class=&quot;table-container&quot;&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;path&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;start&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;start sign&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;path&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;start&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;start sign&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;Absolute&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;root directory&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;/&lt;/td&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Absolute&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;root directory&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;/&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&quot;center&quot;&gt;Relative&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;current directory&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;~&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Relative&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;current directory&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;~&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;";
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;";
 var $config = {
     description         : desc,
     wechatQrcodeTitle   : "微信扫一扫：Share", // 微信二维码提示文字

@@ -67,8 +67,8 @@
 .menu #nav {
   position: fixed;
   top: 0px;
-  background-color: #000;
-  left: -80vw;
+  background-color: #191919;
+  left: calc(0vw - 80vw);
   width: 80vw;
   bottom: 0;
   padding-top: 20px;
@@ -140,14 +140,23 @@
 }
 .search:hover > .search-icon {
   background: none;
-  color: #e84118;
+  color: #f00;
   font-size: 16px;
 }
 .search:hover {
-  border: solid #e84118 1.5px !important;
+  border: solid #f00 1.5px !important;
   font-size: 20px;
 }
 /************ for other media **************/
+@media only screen and (min-width: 800px) {
+  .newMenuOuter {
+    left: 400px;
+  }
+  .menu #nav {
+    left: -400px;
+    width: 400px;
+  }
+}
 @media only screen and (min-width: 1000px) {
   .menu-avatar {
     display: none;
