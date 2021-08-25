@@ -14,10 +14,19 @@
   width: 100%;
 }
 .period {
+  padding: 40px 0;
   text-align: center;
   font-size: 30px;
-  padding: 40px 0;
   color: #d31b29;
+}
+.period a {
+  text-align: center;
+  font-size: 30px;
+  color: #d31b29;
+  text-decoration: none;
+}
+.period a:hover {
+  color: #fff;
 }
 .timeline-item {
   border-left: 3px solid #d31b29;
@@ -206,5 +215,8 @@
     border-width: 30px 45px;
     border-color: transparent transparent transparent #d31b29;
     border-style: solid;
+  }
+  .timeline-item:nth-of-type(2n) .timeline-content :after {
+    content: none !important;
   }
 }

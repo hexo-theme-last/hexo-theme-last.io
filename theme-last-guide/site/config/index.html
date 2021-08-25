@@ -1,0 +1,1046 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
+    
+    
+      
+        <title>基本配置 - Hexo-Theme-Last</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1118c9be.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ba0d045b.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://dyingdown.github.io" title="Hexo-Theme-Last" class="md-header__button md-logo" aria-label="Hexo-Theme-Last" data-md-component="logo">
+      
+  <img src="../assets/images/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hexo-Theme-Last
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              基本配置
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://dyingdown.github.io" title="Hexo-Theme-Last" class="md-nav__button md-logo" aria-label="Hexo-Theme-Last" data-md-component="logo">
+      
+  <img src="../assets/images/favicon.png" alt="logo">
+
+    </a>
+    Hexo-Theme-Last
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        主题介绍
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        安装
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="安装" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          安装
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../download/" class="md-nav__link">
+        下载
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrade.md" class="md-nav__link">
+        升级
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        使用
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="使用" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          使用
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          基本配置
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        基本配置
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    顶部菜单栏
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    博客简介
+  </a>
+  
+    <nav class="md-nav" aria-label="博客简介">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    头像
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    个人简短介绍
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    成立日期
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    博主联系信息
+  </a>
+  
+    <nav class="md-nav" aria-label="博主联系信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    添加新的图标
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    自带页面
+  </a>
+  
+    <nav class="md-nav" aria-label="自带页面">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#archive" class="md-nav__link">
+    Archive页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagscategories" class="md-nav__link">
+    Tags，Categories页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    友链接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    首页文章的样式
+  </a>
+  
+    <nav class="md-nav" aria-label="首页文章的样式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    首页的大图展示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    首页文章列表的样式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    文章页面
+  </a>
+  
+    <nav class="md-nav" aria-label="文章页面">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    文章内容过期提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    文章页面的样式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archive_1" class="md-nav__link">
+    Archive页面
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paginator" class="md-nav__link">
+    Paginator分页
+  </a>
+  
+    <nav class="md-nav" aria-label="Paginator分页">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    多文章分页
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    单文章分页
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        一些功能
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    顶部菜单栏
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    博客简介
+  </a>
+  
+    <nav class="md-nav" aria-label="博客简介">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    头像
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    个人简短介绍
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    成立日期
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    博主联系信息
+  </a>
+  
+    <nav class="md-nav" aria-label="博主联系信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    添加新的图标
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    自带页面
+  </a>
+  
+    <nav class="md-nav" aria-label="自带页面">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#archive" class="md-nav__link">
+    Archive页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagscategories" class="md-nav__link">
+    Tags，Categories页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    友链接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    首页文章的样式
+  </a>
+  
+    <nav class="md-nav" aria-label="首页文章的样式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    首页的大图展示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    首页文章列表的样式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    文章页面
+  </a>
+  
+    <nav class="md-nav" aria-label="文章页面">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    文章内容过期提醒
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    文章页面的样式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archive_1" class="md-nav__link">
+    Archive页面
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paginator" class="md-nav__link">
+    Paginator分页
+  </a>
+  
+    <nav class="md-nav" aria-label="Paginator分页">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    多文章分页
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    单文章分页
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>基本配置</h1>
+                
+                <h2 id="_1">顶部菜单栏</h2>
+<div class="highlight"><pre><span></span><code>menu:
+  XXX:
+    path: /
+    ico: ico-name
+  XXX:
+    path: /XXX
+    ico: ico-name
+    submenu:
+      XXX:
+        path:
+        ico:
+</code></pre></div>
+<ul>
+<li><code>ico-name</code>是图标在<strong>Font Awesome</strong>里面的图标的名称</li>
+<li>
+<p><code>path</code>是你想让图标链接到的地址</p>
+</li>
+<li>
+<p><code>submenu</code>是二级标题</p>
+</li>
+</ul>
+<h2 id="_2">博客简介</h2>
+<h4 id="_3">头像</h4>
+<div class="highlight"><pre><span></span><code>avatar: https://
+</code></pre></div>
+<p>写出头像在云端存储的连接</p>
+<h4 id="_4">个人简短介绍</h4>
+<div class="highlight"><pre><span></span><code>aboutme: XXX
+</code></pre></div>
+<p>简短的个人介绍，在文章页面的侧边栏里展示</p>
+<h4 id="_5">成立日期</h4>
+<div class="highlight"><pre><span></span><code>since: 2019
+</code></pre></div>
+<h3 id="_6">博主联系信息</h3>
+<div class="highlight"><pre><span></span><code>contacts:
+  E-mail: &quot; mailto:o_oyao@outlook.com || fas fa-fw fa-envelope&quot;
+  ...
+  # 微博: &quot; ||fab fa-fw fa-weibo&quot;
+  Twitter: &quot; ||fab fa-fw fa-twitter&quot;
+</code></pre></div>
+<ul>
+<li>在每个页面底部展示联系信息</li>
+<li>使用font awesome图标</li>
+</ul>
+<h4 id="_7">添加新的图标</h4>
+<p>格式：<code>XXX: "url_for(XXX)||icon name of XXX"</code></p>
+<ul>
+<li><code>url_for(XXX)</code>：这里的是图标对应的连接</li>
+<li><code>icon name of XXX</code>：是font awesome里面的图标的<code>&lt;i class="XXX"&gt;&lt;/i&gt;</code>标签里面<strong>class</strong>的全部内容</li>
+</ul>
+<h2 id="_8">自带页面</h2>
+<p>首先，使用hexo自带的命令<code>hexo new page "page name"</code>创建新页面</p>
+<h3 id="archive">Archive页面</h3>
+<p>这个页面是不用创建就自带的。</p>
+<h3 id="tagscategories">Tags，Categories页面</h3>
+<ol>
+<li>
+<p>首先创建名为<code>tags</code>的页面</p>
+<div class="highlight"><pre><span></span><code>hexo new page tags
+</code></pre></div>
+</li>
+<li>
+<p>在<code>/source/tags/index.md</code>里面添加 <code>layout: tags</code></p>
+</li>
+</ol>
+<h3 id="_9">友链接</h3>
+<p>创建友链接页面</p>
+<div class="highlight"><pre><span></span><code>hexo new page links
+</code></pre></div>
+<p>如何添加友链接</p>
+<ol>
+<li>
+<p>找到<code>/source/links/index.md</code></p>
+</li>
+<li>
+<p>在=== ===包裹的段落里面添加一条</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code>links:
+  - group_name: Friends
+    description: Beautiful or handsome friends
+    items:
+    - url: https://
+      img: https://
+      name: XXX
+      description: Opps, he says nothing.
+</code></pre></div>
+<ul>
+<li><code>group_name</code>表示对链接进行分组</li>
+<li><code>description</code>是每一个分组的描述</li>
+<li><code>items</code>里面具体是一条一条的友链接<ul>
+<li>每一条友链接有四个信息：网站地址，头像地址，网站名称， 网站描述</li>
+<li>每一条连接都以一个<code>-</code>开头，格式如上</li>
+</ul>
+</li>
+</ul>
+<p><strong>注意：里面的看起来像是tabs的缩进，其实是空格，而且必须是空格</strong></p>
+<h2 id="_10">首页文章的样式</h2>
+<h4 id="_11">首页的大图展示</h4>
+<div class="highlight"><pre><span></span><code>homeCover:
+  fixed: true
+  url: https://
+</code></pre></div>
+<p>首页的图是否是固定的，不随着滑动而向上移动</p>
+<h4 id="_12">首页文章列表的样式</h4>
+<div class="highlight"><pre><span></span><code>clampLines: 8
+</code></pre></div>
+<p><code>clampLines</code> 是首页每篇文章的描述内容展示多少行，是一个整数数字</p>
+<h2 id="_13">文章页面</h2>
+<h3 id="_14">文章内容过期提醒</h3>
+<div class="highlight"><pre><span></span><code>Warning:
+  on: true
+  Days: 200
+  Content: &quot;This article was written {} days ago. The content of the article may be out of date.&quot;
+</code></pre></div>
+<p>在文章前面显示</p>
+<p><img alt="warning" src="../post-date-warning.png" /></p>
+<ul>
+<li>如果在<code>warning.on</code>上打开，则每篇文章都自带提醒</li>
+<li>还可以在每篇文章的<code>md</code>文件里添加<code>Warning: true</code>来打开文章的过期提醒</li>
+<li><code>Days</code>是过期的天数限制</li>
+<li><code>Content</code>里面的<code>{}</code>，就是<code>Days</code>的数值，剩下的文字都可以任意修改。</li>
+</ul>
+<h3 id="_15">文章页面的样式</h3>
+<div class="highlight"><pre><span></span><code>postStyle:
+  authorInfoPosition: right
+  contentStyle: github
+  color: &quot;default&quot;
+</code></pre></div>
+<ul>
+<li>
+<p><code>authorInfoPosition</code>：是目录和个人简介头像的位置，有左、右两个位置</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">right</label><div class="tabbed-content">
+<p><img alt="toc-right" src="../toc-right.png" /></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">left</label><div class="tabbed-content">
+<p><img alt="toc-left" src="../toc-left.png" /></p>
+</div>
+</div>
+</li>
+<li>
+<p><code>contentStyle</code>：文章页面的样式选项</p>
+<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">github</label><div class="tabbed-content">
+<p><img alt="post-github.png" src="../post-github.png" /></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">music</label><div class="tabbed-content">
+<p><img alt="post-music.png" src="../post-music.png" /></p>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">microsoft</label><div class="tabbed-content">
+<p><img alt="post-microsoft.png" src="../post-microsoft.png" /></p>
+</div>
+</div>
+</li>
+<li>
+<p><code>color</code>：文章页面的主题颜色</p>
+</li>
+<li>
+<p>默认就是<code>default</code></p>
+</li>
+<li>还可以填入颜色的名字，是在<code>css</code>里面可用的颜色名字</li>
+<li>可以填入<code>#XXXXXX</code>，以<code>#</code>开头的以十六进制的颜色</li>
+</ul>
+<h2 id="archive_1">Archive页面</h2>
+<p><div class="highlight"><pre><span></span><code>archiveStyle:
+  style: normal
+  type: center # basic, split, center
+  color: pink
+</code></pre></div>
+<strong><code>style</code>样式</strong>：comment-shape、normal</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">normal</label><div class="tabbed-content">
+<p><img alt="normal" src="../archive-normal.png" /></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">comment-shape</label><div class="tabbed-content">
+<p><img alt="comment-shape" src="../archive-comment-shape.png" /></p>
+</div>
+</div>
+<p><strong><code>type</code>结构</strong>：basic、split、center</p>
+<div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">center</label><div class="tabbed-content">
+<p><img alt="center" src="../archive-normal-center.png" /></p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">split</label><div class="tabbed-content">
+<p><img alt="split" src="../archive-normal-split.png" /></p>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">basic</label><div class="tabbed-content">
+<p><img alt="basic" src="../archive-normal-basic.png" /></p>
+</div>
+</div>
+<h2 id="paginator">Paginator分页</h2>
+<h3 id="_16">多文章分页</h3>
+<div class="highlight"><pre><span></span><code>paginationNumberBackground: true
+</code></pre></div>
+<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">true</label><div class="tabbed-content">
+<p><img alt="paginator-multi-background" src="../paginator-multi-background.png" /></p>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">false</label><div class="tabbed-content">
+<p><img alt="paginator-multi" src="../paginator-multi.png" /></p>
+</div>
+</div>
+<h3 id="_17">单文章分页</h3>
+<div class="highlight"><pre><span></span><code>postPagePaginationStyle: card # normal  picture  card
+</code></pre></div>
+<div class="tabbed-set" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">card</label><div class="tabbed-content">
+<p><img alt="card" src="../paginator-post-card.png" /></p>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">picure</label><div class="tabbed-content">
+<p><img alt="picture" src="../paginator-post-picture.png" /></p>
+</div>
+<input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><label for="__tabbed_6_3">normal</label><div class="tabbed-content">
+<p><img alt="normal" src="../paginator-post-normal.png" /></p>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../download/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 下载" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              下载
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../functions/" class="md-footer__link md-footer__link--next" aria-label="下一页: 一些功能" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              一些功能
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.top"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.2b46852b.min.js"></script>
+      
+    
+  </body>
+</html>
