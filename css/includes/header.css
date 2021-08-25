@@ -1,9 +1,14 @@
+@font-face {
+  font-family: "fontawesome";
+  src: url("/font-awesome/webfonts/fa-solid-900.eot");
+  src: url("/font-awesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/font-awesome/webfonts/fa-solid-900.woff") format("woff"), url("/font-awesome/webfonts/fa-solid-900.ttf") format("truetype"), url("/font-awesome/webfonts/fa-solid-900.svg#micon") format("svg");
+}
 #menu-outer a {
   text-decoration: none;
   color: #fff;
 }
 #menu-outer a:hover {
-  color: #f00;
+  color: #d31b29;
 }
 #menu-outer {
   position: fixed;
@@ -140,11 +145,11 @@
 }
 .search:hover > .search-icon {
   background: none;
-  color: #f00;
+  color: #d31b29;
   font-size: 16px;
 }
 .search:hover {
-  border: solid #f00 1.5px !important;
+  border: solid #d31b29 1.5px !important;
   font-size: 20px;
 }
 /************ for other media **************/
@@ -248,7 +253,7 @@
 }
   .menu #nav .menu-items .item-name::after {
     content: "";
-    border: 0 solid #f00;
+    border: 0 solid #d31b29;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -257,10 +262,11 @@
     transition: width 0.5s;
   }
   .menu #nav .menu-items .item-name:hover::after {
-    border: 4px solid #f00;
+    border: 4px solid #d31b29;
     width: 100%;
+    z-index: -1;
   }
   .menu #nav .menu-items .item-name:hover .name-a {
-    color: #f00;
+    color: #d31b29;
   }
 }

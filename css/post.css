@@ -214,6 +214,11 @@ p {
   margin: 0 2px;
   color: #fff;
 }
+@font-face {
+  font-family: "fontawesome";
+  src: url("/font-awesome/webfonts/fa-solid-900.eot");
+  src: url("/font-awesome/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/font-awesome/webfonts/fa-solid-900.woff") format("woff"), url("/font-awesome/webfonts/fa-solid-900.ttf") format("truetype"), url("/font-awesome/webfonts/fa-solid-900.svg#micon") format("svg");
+}
 body {
   background-color: #fff !important;
 }
@@ -328,7 +333,7 @@ body {
   -webkit-transform: rotate(45deg);
   width: 100px;
   display: block;
-  background: #b31917;
+  background: #d31b29;
   position: absolute;
   top: 19px;
   right: -21px;
@@ -339,10 +344,10 @@ body {
   left: 0px;
   top: 100%;
   z-index: -1;
-  border-left: 3px solid #b31917;
+  border-left: 3px solid #d31b29;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #b31917;
+  border-top: 3px solid #d31b29;
 }
 .ribbon .ri:after {
   content: "";
@@ -351,9 +356,9 @@ body {
   top: 100%;
   z-index: -1;
   border-left: 3px solid transparent;
-  border-right: 3px solid #b31917;
+  border-right: 3px solid #d31b29;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #b31917;
+  border-top: 3px solid #d31b29;
 }
 .date {
   min-width: 130px;
