@@ -73,13 +73,11 @@ contacts:
 
 ### Tags，Categories页面
 
-1. 首先创建名为`tags`的页面
+需要创建名为`tags`的页面
 
-    ```
-    hexo new page tags
-    ```
-
-2. 在`/source/tags/index.md`里面添加 `layout: tags`
+```
+hexo new page tags
+```
 
 ### 友链接
 

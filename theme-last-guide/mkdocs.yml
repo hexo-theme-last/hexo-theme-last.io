@@ -4,7 +4,7 @@ nav:
   - 主题介绍: index.md
   - 安装:
     - 下载: download.md
-    - 升级: upgrade.md
+    - 更新: upgrade.md
   - 使用: 
     - 基本配置: config.md
     - 一些功能: functions.md
